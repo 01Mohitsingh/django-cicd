@@ -28,7 +28,7 @@ pipeline {
             steps {
                 sh """
                     echo 'Stopping old container if exists...'
-                    docker rm -f hello || true
+                    docker rm -f djangoapp || true
                 """
             }
         }
